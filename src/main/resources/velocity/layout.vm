@@ -12,12 +12,12 @@
         <ul id="menu">
             #if($currentUser)
                 <li>
-                    <form method="post" action="$WebPath.getLOGOUT()">
+                    <form method="post" action="/logout">
                         <button id="logout">LOGOUT</button>
                     </form>
                 </li>
             #else
-                <li><a href="$WebPath.getLOGIN()"">LOGIN</a></li>
+                <li><a href="/login">LOGIN</a></li>
             #end
         </ul>
     </nav>
@@ -28,7 +28,7 @@
     </div>
 </main>
 <footer>
-    $msg.get("COMMON_FOOTER_TEXT")
+   COMMON_FOOTER_TEXT
 </footer>
 </body>
 </html>
